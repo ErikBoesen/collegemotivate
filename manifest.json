@@ -1,0 +1,21 @@
+{
+    "name": "My extension",
+    "manifest_version": 2,
+    "name": "CollegeMotivate",
+    "version": "0.0.0",
+
+    "description": "Display a motivating video when you visit distracting websites!",
+    "icons": {
+
+    },
+    "options_page": "options.html",
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    },
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "css": [],
+        "js": ["script.js"]
+    }]
+}
